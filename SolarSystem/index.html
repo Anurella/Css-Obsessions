@@ -9,6 +9,7 @@
 		Solar Planet Inspiration 
 	</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    
 
 </head>
 
@@ -26,18 +27,15 @@
     variable to increase the speed of revolutions. Here 1 year = 30 seconds.
 		</p>
       
-       <div class="formm"> 
-     	<form action="GET" name="form">
-
+     	<form  method="GET" id="form" name="form" class="formm">
             <h3> Let's Play a Game </h3>
-     		<label> How many days does it take for Venus to revolve round the Sun? </label>
-
-     		<input type="text" name="answer" placeholder="take a lucky guess" value="Year">
-
-     		<input type="button" value="SUBMIT" onclick="return answer(val);"> 
-
+            Name  <input type="text"  id="name" name="name" placeholder="what is your name" > <br>
+            How many days does it take for Venus to revolve round the Sun?    <br>
+     		<input type="number" name="answer"  placeholder="to the nearest whole number" id="ans">
+     		<button type="submit" onclick="getAnswer(this.form);"> ANSWER  </button>
      	</form>
-		</div>
+
+		<div id="result"></div>
 
 <!-- end of solar header -->
      </div>
@@ -63,7 +61,11 @@
 
 
      <!-- FOOTER  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js" ></script>
+<script src="solar.js"> </script>
 
-<script src="solar.js" async> </script>
+<script type="text/javascript">
+    
+</script>
 </body>
 </html>

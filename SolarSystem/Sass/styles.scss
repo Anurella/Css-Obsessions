@@ -114,12 +114,17 @@ h3 {
 
 }
 
-.formm {
- padding:10px;
+
+ 
+ 
+    .formm {  font-family: Lato; display: block; padding:10px; position: absolute; z-index: 999;
     h3 { font-size:1em;}
-    label {display: block;}
-    input { height: 30px; margin-bottom: 5px;}
-}
+    input, button { outline:none; margin:3px; height: 30px; padding: 6px 12px; font-size: 14px; color: black;}
+    input {  border-radius:0; border: 3px solid #9f5e26; -webkit-transition: 1s ease-in;transition: 1s ease;}
+    button { background:radial-gradient(ellipse at center, #ffd000 1%,#f9b700 39%,#f9b700 39%,#e06317 100%); }
+  }
+
+#result { margin-top:3px; color: #fff; }
 
 code{
 
