@@ -60,6 +60,13 @@ $pluto-orb: 780px; $pluto-pl: 3px;
 
 $asteriods-belt-orb: 300px; $asteriods-belt-pl: 210px;
 
+$width-name: max-width;
+$width-name2: min-width;
+$target-width: 800px;
+$target-width2: 768px;
+
+
+
 
 *, *:before, *:after { 
 
@@ -78,7 +85,7 @@ body {
   -webkit-font-smoothing: antialiased;
   color:#fff;
   // background-color
-  background: radial-gradient(ellipse at bottom, #374351 0%, #050608 100%);
+  background: radial-gradient(ellipse at bottom, #060d18 5%, #050608 95%);
   background-attachment:fixed;
 }
 
@@ -112,12 +119,18 @@ h3 {
  
   .desc{ padding: 10px;}
 
+@media screen and ($width-name : $target-width) { 
+
+  width: 100%;
+
+}
+
 }
 
 
  
- 
-    .formm {  font-family: Lato; display: block; padding:10px; position: absolute; z-index: 999;
+
+   .formm {  font-family: Lato; display: block; padding:10px; position: absolute; z-index: 999;
     h3 { font-size:1em;}
     input, button { outline:none; margin:3px; height: 30px; padding: 6px 12px; font-size: 14px; color: black;}
     input {  border-radius:0; border: 3px solid #9f5e26; -webkit-transition: 1s ease-in;transition: 1s ease;}
@@ -150,6 +163,7 @@ code{
   margin:0 auto;
   width:100%;
   height:100%;
+  top: 10px;
   position:relative;
 
 // inner divs 
@@ -173,6 +187,14 @@ code{
       }
     }
   }
+
+@media screen and ($width-name : 600px) { 
+
+  top: 100%;
+  left: 25%;
+
+}
+
 }
 
 .sun {
@@ -236,7 +258,7 @@ code{
   &:before{
     height:$earth-pl;
     width:$earth-pl;
-    background:#11abe9;
+    background:#094567;
     margin-top: -$earth-pl / 2;
     margin-left: -$earth-pl / 2;
   }
@@ -265,7 +287,7 @@ code{
   &:before{
     height:$mars-pl;
     width:$mars-pl;
-    background:#cf3921;
+    background:#59331d;
     margin-top: -$mars-pl / 2;
     margin-left: -$mars-pl / 2;
   }
@@ -329,7 +351,7 @@ code{
   &:before{
     height:$uranus-pl;
     width:$uranus-pl;
-    background:#b5e3e3;
+    background:#596a73;
     margin-top: -$uranus-pl / 2;
     margin-left: -$uranus-pl / 2;
   }
@@ -378,6 +400,7 @@ code{
   margin-top: -$pluto-orb / 2 + -60;
   margin-left: -$pluto-orb / 2 + 70;
   animation: orb revolution(90580) linear infinite;
+  //pluto is no longer a planet 
   &:before{
     height:$pluto-pl;
     width:$pluto-pl;
@@ -398,4 +421,6 @@ code{
 
 //responsiveness  @375 solar__syst will have a top:23em, left:2em
 //solar__header will have no assigned width 
+ 
+
 
